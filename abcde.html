@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Tính tổng các số chia hết cho 5
+
+    function total(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 === 0) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+    }
+
+    //Lọc các số chia hết cho 5
+    function findNumber(arr) {
+        let arr2 = [];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 === 0) {
+                arr2.push(arr[i]);
+            }
+        }
+        return arr2
+    }
+
+    // Hàm đổi thứ
+
+    function changeValue(arr, n) {
+        arr[0] = n - 1;
+
+    }
+</script>
+</body>
+</html>
